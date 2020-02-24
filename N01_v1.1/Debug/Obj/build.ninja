@@ -1,0 +1,84 @@
+#Generating source browse information for project N01
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build delay.pbi : index delay.xcl
+build eeprom.pbi : index eeprom.xcl
+build stm8l15x_adc.pbi : index stm8l15x_adc.xcl
+build stm8l15x_aes.pbi : index stm8l15x_aes.xcl
+build stm8l15x_beep.pbi : index stm8l15x_beep.xcl
+build stm8l15x_clk.pbi : index stm8l15x_clk.xcl
+build stm8l15x_comp.pbi : index stm8l15x_comp.xcl
+build stm8l15x_dac.pbi : index stm8l15x_dac.xcl
+build stm8l15x_dma.pbi : index stm8l15x_dma.xcl
+build stm8l15x_exti.pbi : index stm8l15x_exti.xcl
+build stm8l15x_flash.pbi : index stm8l15x_flash.xcl
+build stm8l15x_gpio.pbi : index stm8l15x_gpio.xcl
+build stm8l15x_i2c.pbi : index stm8l15x_i2c.xcl
+build stm8l15x_irtim.pbi : index stm8l15x_irtim.xcl
+build stm8l15x_it.pbi : index stm8l15x_it.xcl
+build stm8l15x_itc.pbi : index stm8l15x_itc.xcl
+build stm8l15x_iwdg.pbi : index stm8l15x_iwdg.xcl
+build stm8l15x_lcd.pbi : index stm8l15x_lcd.xcl
+build stm8l15x_pwr.pbi : index stm8l15x_pwr.xcl
+build stm8l15x_rst.pbi : index stm8l15x_rst.xcl
+build stm8l15x_rtc.pbi : index stm8l15x_rtc.xcl
+build stm8l15x_spi.pbi : index stm8l15x_spi.xcl
+build stm8l15x_syscfg.pbi : index stm8l15x_syscfg.xcl
+build stm8l15x_tim1.pbi : index stm8l15x_tim1.xcl
+build stm8l15x_tim2.pbi : index stm8l15x_tim2.xcl
+build stm8l15x_tim3.pbi : index stm8l15x_tim3.xcl
+build stm8l15x_tim4.pbi : index stm8l15x_tim4.xcl
+build stm8l15x_tim5.pbi : index stm8l15x_tim5.xcl
+build stm8l15x_usart.pbi : index stm8l15x_usart.xcl
+build stm8l15x_wfe.pbi : index stm8l15x_wfe.xcl
+build stm8l15x_wwdg.pbi : index stm8l15x_wwdg.xcl
+build cardoper.pbi : index cardoper.xcl
+build iso14443a.pbi : index iso14443a.xcl
+build iso14443b.pbi : index iso14443b.xcl
+build mifare1.pbi : index mifare1.xcl
+build RFID.pbi : index RFID.xcl
+build sky1311_drv.pbi : index sky1311_drv.xcl
+build sky1311t.pbi : index sky1311t.xcl
+build adc.pbi : index adc.xcl
+build DynamicPassword.pbi : index DynamicPassword.xcl
+build iwdg.pbi : index iwdg.xcl
+build Key.pbi : index Key.xcl
+build lock.pbi : index lock.xcl
+build main.pbi : index main.xcl
+build rtc.pbi : index rtc.xcl
+build save.pbi : index save.xcl
+build spi.pbi : index spi.xcl
+build SYS_CLOCK.pbi : index SYS_CLOCK.xcl
+build TIM.pbi : index TIM.xcl
+build uart.pbi : index uart.xcl
+build N01_part0.pbi : link delay.pbi eeprom.pbi stm8l15x_adc.pbi stm8l15x_aes.pbi stm8l15x_beep.pbi stm8l15x_clk.pbi stm8l15x_comp.pbi
+build N01_part1.pbi : link stm8l15x_dac.pbi stm8l15x_dma.pbi stm8l15x_exti.pbi stm8l15x_flash.pbi stm8l15x_gpio.pbi stm8l15x_i2c.pbi stm8l15x_irtim.pbi
+build N01_part2.pbi : link stm8l15x_it.pbi stm8l15x_itc.pbi stm8l15x_iwdg.pbi stm8l15x_lcd.pbi stm8l15x_pwr.pbi stm8l15x_rst.pbi stm8l15x_rtc.pbi
+build N01_part3.pbi : link stm8l15x_spi.pbi stm8l15x_syscfg.pbi stm8l15x_tim1.pbi stm8l15x_tim2.pbi stm8l15x_tim3.pbi stm8l15x_tim4.pbi stm8l15x_tim5.pbi
+build N01_part4.pbi : link stm8l15x_usart.pbi stm8l15x_wfe.pbi stm8l15x_wwdg.pbi cardoper.pbi iso14443a.pbi iso14443b.pbi mifare1.pbi
+build N01_part5.pbi : link RFID.pbi sky1311_drv.pbi sky1311t.pbi adc.pbi DynamicPassword.pbi iwdg.pbi Key.pbi
+build N01_part6.pbi : link lock.pbi main.pbi rtc.pbi save.pbi spi.pbi SYS_CLOCK.pbi TIM.pbi
+build N01_part7.pbi : link uart.pbi
+build N01.pbd : link N01_part0.pbi N01_part1.pbi N01_part2.pbi N01_part3.pbi N01_part4.pbi N01_part5.pbi N01_part6.pbi N01_part7.pbi
+build N01.pbw : browsedata N01.pbd
+
+

@@ -1,0 +1,34 @@
+stm8l15x_lcd.pbi: \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\src\stm8l15x_lcd.c \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc\stm8l15x_lcd.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_conf.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_adc.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_aes.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_beep.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_clk.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_comp.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_dac.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_dma.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_exti.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_flash.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_gpio.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_i2c.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_irtim.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_itc.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_iwdg.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_lcd.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_pwr.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_rst.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_rtc.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_spi.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_syscfg.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_tim1.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_tim2.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_tim3.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_tim4.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_tim5.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_usart.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_wfe.h \
+  D:\XH\BLE\JBE_2020\N01_lock\N01_v1.1\lib\inc/stm8l15x_wwdg.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\intrinsics.h
