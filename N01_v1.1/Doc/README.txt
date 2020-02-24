@@ -14,7 +14,7 @@ XSylf2019110lock
 
 在git里输入cd SO1指向这个项目
 
-git拉取项目步骤：
+git克隆项目步骤：
 1.git config --global user.name "XSylf2019"		//设置用户名与邮箱
 2.git config --global user.email 641133321@qq.com		//设置用户名与邮箱
 3.git config --global http.sslVerify false			//SSL证书的问题，可以忽略证书继续重新执行
@@ -24,6 +24,9 @@ git拉取项目步骤：
 4.git clone https://git.xciotapp.com:3000/smartdevice/S01.git /g/project/20191017	//指定克隆路径
 /***********************************************/
 5.到本地查看代码
+
+git拉取项目步骤：
+1.git pull
 
 git提交项目步骤：
 1.cd S01
